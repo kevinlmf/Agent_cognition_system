@@ -127,5 +127,4 @@ memory_id = memory_engine.store_experience(
 MIT License
 
 ---
-
-**Built with:** Python, NetworkX, NumPy
+Building memories that remember and bring light — more than react.🌙
