@@ -1,0 +1,21 @@
+# Core dependencies
+numpy>=1.21.0
+networkx>=2.6.3
+
+# Web data collection
+requests>=2.26.0
+
+# Optional: For enhanced NER (uncomment if needed)
+# spacy>=3.0.0
+# transformers>=4.0.0
+
+# Optional: For embeddings (uncomment if needed)
+# sentence-transformers>=2.0.0
+# openai>=1.0.0
+
+# Optional: For visualization
+# matplotlib>=3.4.0
+# plotly>=5.0.0
+
+# Development
+pytest>=7.0.0
