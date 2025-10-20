@@ -132,4 +132,4 @@ memory_id = memory_engine.store_experience(
 MIT License
 
 ---
-Trying to build memories that remember and bring light✨.
+Trying my best to build memories that last and bring light✨.
