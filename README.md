@@ -18,11 +18,16 @@ External World -> [Perception Layer] -> [Memory Layer] -> [Cognitive Layer (LLM/
 
 ## Installation & Quick Start
 
+### Setup Environment
 ```bash
-# Clone and install
-cd Agent_Perception_Memory_System
+git clone https://github.com/kevinlmf/Agent_cognition_system
+cd Agent_cognition_system
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
+```
 
+```bash
 # Run demos
 python main.py
 
