@@ -20,8 +20,8 @@ External World -> [Perception Layer] -> [Memory Layer] -> [Cognitive Layer (LLM/
 
 ### Setup Environment
 ```bash
-git clone https://github.com/kevinlmf/Agent_cognition_system
-cd Agent_cognition_system
+git clone https://github.com/kevinlmf/Agent_CognitiveCore
+cd Agent_CognitiveCore
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
