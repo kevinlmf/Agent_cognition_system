@@ -74,8 +74,8 @@ Our methods have been validated across **three diverse scenarios**, demonstratin
 
 ```bash
 # Clone the repository
-git clone https://github.com/kevinlmf/Agent_CognitiveCore
-cd Agent_CognitiveCore
+git clone https://github.com/kevinlmf/Agent_Memory
+cd Agent_Memory
 
 # Create and activate virtual environment
 python -m venv venv
@@ -94,7 +94,7 @@ python evaluation/evaluate_poker.py
 ## Project Structure
 
 ```
-Memory_System/
+Agent_Memory/
 ├── memory/
 │   ├── memory_graph.py      # Graph-based storage (universal)
 │   ├── episodic_memory.py  # Time-stamped experiences
