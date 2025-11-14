@@ -141,9 +141,24 @@ class WorldGraph:
 
     def get_statistics(self) -> Dict[str, Any]:
         """Get graph statistics"""
+        num_nodes = self.graph.number_of_nodes()
+        num_edges = self.graph.number_of_edges()
+        
+        # Handle empty graph case
+        if num_nodes == 0:
+            return {
+                "num_entities": 0,
+                "num_relations": 0,
+                "density": 0.0,
+                "is_connected": False,
+                "num_components": 0,
+                "entity_types": {},
+                "relation_types": {}
+            }
+        
         return {
-            "num_entities": self.graph.number_of_nodes(),
-            "num_relations": self.graph.number_of_edges(),
+            "num_entities": num_nodes,
+            "num_relations": num_edges,
             "density": nx.density(self.graph),
             "is_connected": nx.is_weakly_connected(self.graph),
             "num_components": nx.number_weakly_connected_components(self.graph),

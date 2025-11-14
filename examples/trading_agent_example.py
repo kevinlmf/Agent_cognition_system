@@ -1,13 +1,15 @@
 """
-Example: Trading Agent with Perception + Memory
-Demonstrates a realistic trading scenario
+Trading Agent Example
+Demonstrates memory system effectiveness in stock trading
 """
 import sys
-sys.path.append('..')
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from main import CognitiveAgent
 import numpy as np
 from datetime import datetime, timedelta
+from typing import Dict, List, Any
 
 
 class TradingAgent:
@@ -19,6 +21,7 @@ class TradingAgent:
         self.agent = CognitiveAgent(mode="langgraph")
         self.position = 0  # Current position: -1 (short), 0 (neutral), 1 (long)
         self.cash = 10000.0
+        self.initial_balance = 10000.0
         self.shares = 0
         self.trade_history = []
 
@@ -96,7 +99,8 @@ class TradingAgent:
             "price": price,
             "position": self.position,
             "portfolio_value": self.cash + self.shares * price,
-            "timestamp": datetime.now()
+            "timestamp": datetime.now(),
+            "reward": reward
         })
 
         # Record action in memory
@@ -231,6 +235,9 @@ def simulate_trading_day():
 
     print(f"\n{'='*70}")
 
+    return agent
+
 
 if __name__ == "__main__":
     simulate_trading_day()
+
