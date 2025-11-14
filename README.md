@@ -1,4 +1,4 @@
-# Agent Perception + Memory System
+# Agent Memory System
 
 A graph-based cognitive infrastructure for intelligent agents with **universal memory mechanisms** that work across diverse environments: Industrial systems, Healthcare, and Competitive games.
 
